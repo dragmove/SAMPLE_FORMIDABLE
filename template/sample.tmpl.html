@@ -1,0 +1,21 @@
+<div class="wrapArticle">
+    <div>+ This is sample.tmpl.html</div>
+
+    <div class="todayInfo">
+        <span class="week">Today</span>
+        <span class="count"></span>
+    </div>
+
+    {{? it.name === 'Kim'}}
+    <div>{{=it.name}}</div>
+    {{?? it.company}}
+    <div>{{=it.company}}</div>
+    {{??}}
+    <div>no name</div>
+    {{?}}
+
+    {{~it.items :value :index}}
+    <div>value is {{=value.value}}, index is {{=index}}</div>
+    {{~}}
+
+</div>
